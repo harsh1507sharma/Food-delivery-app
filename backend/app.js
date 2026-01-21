@@ -18,10 +18,10 @@ app.use(cookieParser());
 
 
 // routes import 
-import { Foodrouter} from "./routes/foodrouter.js"
-import { Userrouter } from "./routes/userroutes.js"
-import { CartRouter } from "./routes/cartroutes.js"
-import {Orderrouter}  from "./routes/orderroutes.js"
+import { Foodrouter} from "./src/routes/foodrouter.js"
+import { Userrouter } from "./src/routes/userroutes.js"
+import { CartRouter } from "./src/routes/cartroutes.js"
+import {Orderrouter}  from "./src/routes/orderroutes.js"
 
 // routes declaration
 
