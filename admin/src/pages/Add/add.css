@@ -1,0 +1,75 @@
+.add{
+    width: 70%;
+    margin-left: 70px;
+    margin-top: 50px;
+    gap: 20px;
+    font-size: 16px;
+    color: grey;
+}
+.add form{
+    gap :20px; 
+}
+.upload-image-flex-colmn{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+    overflow: hidden;
+    
+    
+}
+.upload-image-flex-colmn img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor:  pointer;
+ 
+
+}
+.product-flex-colm{
+    display: flex;
+   flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-size: 20px;
+}
+.product-flex-colm input{
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+.product-desciption{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap:16px;
+}
+.product-desciption textarea{
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+}
+.product-category-price{
+    display: flex;
+    gap:20px;
+    font-size: 16px;
+}
+.product-category-price select, .product-category-price input{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.add-btn{
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    max-width:120px;
+}

@@ -1,0 +1,25 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+} 
+.admin-content{
+  display: flex;
+}
+a{
+  text-decoration: none;  
+  color:inherit;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: grey;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}

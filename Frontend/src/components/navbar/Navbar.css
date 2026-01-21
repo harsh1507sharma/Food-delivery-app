@@ -1,0 +1,90 @@
+.navbar{
+    padding: 20px 0px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar.logo{
+    width: 100px;
+}
+.navbar-menu{
+     display: flex;
+    font-size: 20px;
+    list-style: none;
+    gap: 20px;
+    color: blueviolet;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap :40px;
+
+}
+.sign-in button{
+    background : transparent;
+    color: brown;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 1px solid tomato;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sign-in :hover{
+    background-color:antiquewhite;
+}
+.navbar-menu li {
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.navbar-menu li.active {
+  border-bottom: 3px solid black;
+}
+
+
+.basket{
+    position: relative;
+}
+.basket .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 50px;
+    top: -8px;
+    right: -6px;
+}
+.navbar-proflie{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-dropdown{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 150px;
+    z-index:1;
+    background-color: white;
+    border: 1px solid red;
+    list-style: none;
+    padding: 10px;
+    display: none;
+}
+.navbar-proflie:hover .navbar-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-dropdown li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 5px 0px;
+    cursor: pointer;
+    
+}
+.navbar-dropdown li:hover{
+    color: tomato;
+}

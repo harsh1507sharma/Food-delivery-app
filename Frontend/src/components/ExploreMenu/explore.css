@@ -1,0 +1,55 @@
+.explore-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.explore-menu h1{
+    font-weight:1000;
+    color: black;
+}
+.explore-menu-text{
+    color: grey;
+    max-width: 50%;
+    font-size: 20px;
+}
+.explore-menu-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    margin: 20px 0px ;
+    overflow-x:scroll ;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+} 
+.explore-menu-list-item img{
+    min-width: 30px;
+    cursor: pointer;
+     border: 3px solid transparent; /* ye wala gpt se  */
+  border-radius: 50%;
+  transition: all 0.2s ease;
+    
+
+}
+.explore-menu-list-item p{
+    margin-top: 10px; 
+  color:grey    ;
+  font-weight: 200;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.explore-menu hr{
+    height: 2px;
+    margin: 10px 0px;
+    background-color: grey;
+    border: none;
+
+}
+.explore-menu-list-item img.active {
+  border-color: tomato;
+}
+

@@ -1,0 +1,38 @@
+# =========================
+# Global ignores (root)
+# =========================
+
+# Environment variables (NEVER push)
+.env
+*.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Dependency folders (safety net)
+# =========================
+node_modules
+
+# Build outputs (safety net)
+dist
+build
+dist-ssr
