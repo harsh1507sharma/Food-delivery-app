@@ -9,7 +9,7 @@ const UserContextProvider = ({ children }) => {
 
   const [food_list, setfood_list] = useState([]);
   const [Cartitems, setCartitems] = useState({});
-  const url = "https://food-delivery-app-production-2e9b.up.railway.app/";
+  const url = "https://food-delivery-app-production-2e9b.up.railway.app";
   const [token, settoken] = useState(null);
 
 
