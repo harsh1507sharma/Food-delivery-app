@@ -32,7 +32,7 @@ const Add = () => {
 
         // You can use fetch or axios to send 'form' to your backend
         try {
-            const response = await axios.post("http://localhost:8000/api/v1/Food/addFood", form)
+            const response = await axios.post("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Food/addFood", form)
 
             if (response.status === 200) {
 

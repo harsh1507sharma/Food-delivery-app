@@ -12,7 +12,7 @@
 
       const removeItem = async(id)=>{ 
         try {
-          const response = await axios.post("http://localhost:8000/api/v1/Food/remove" ,{id});
+          const response = await axios.post("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Food/remove" ,{id});
           if (response.status === 200) {
           toast.success("Food removed");
           await fetchlist();
@@ -26,7 +26,7 @@
       }
 
     const fetchlist = async () => {
-      const response = await axios.get("http://localhost:8000/api/v1/Food/list");
+      const response = await axios.get("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Food/list");
       // console.log(response.data);
       if(response.status === 200){
         
