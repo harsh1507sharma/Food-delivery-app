@@ -23,10 +23,10 @@ const Login = ({setShowlogin})=>{
         e.preventDefault();
         let newurl = url;
         if(currstate==="LOGIN"){
-            newurl += "/api/v1/User/login"
+            newurl += "api/v1/User/login"
        }
        else{
-        newurl += "/api/v1/User/register"
+        newurl += "api/v1/User/register"
        }
        try {
         const response = await axios.post(newurl,data);
