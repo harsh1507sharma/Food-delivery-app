@@ -104,7 +104,7 @@ const Add = () => {
                             <select name="category" onChange={onchangehandler} value={data.category} >
                                 <option value="Salad">Salad</option>
                                 <option value="Rolls">Rolls</option>
-                                <option value="Desert">Desert</option>
+                                <option value="Deserts">Desert</option>
                                 <option value="Sandwich">Sandwich</option>
                                 <option value="Cake">Cake</option>
                                 <option value="Pasta">Pasta</option>
