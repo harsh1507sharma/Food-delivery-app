@@ -7,7 +7,7 @@ dotenv.config({ path: './.env' });
 const app = express()
 
 app.use(cors({
-    origin: ["http://localhost:5173","http://localhost:5174"],
+    origin: ["https://food-delivery-app-mu-two.vercel.app/", "https://food-delivery-app-gd4l.vercel.app/"],
     credentials: true,
 }))
 

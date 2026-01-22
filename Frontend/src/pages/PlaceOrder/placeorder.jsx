@@ -44,7 +44,7 @@ const Placeorder = () => {
       items : orderitems,
       amount : gettotalamount() +2,
     }
-    let response = await axios.post("http://localhost:8000/api/v1/Order/place",orderdata,{
+    let response = await axios.post("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Order/place",orderdata,{
     headers: {
       Authorization: `Bearer ${token}`,
     },})

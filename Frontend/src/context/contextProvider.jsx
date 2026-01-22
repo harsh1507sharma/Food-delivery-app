@@ -9,14 +9,14 @@ const UserContextProvider = ({ children }) => {
 
   const [food_list, setfood_list] = useState([]);
   const [Cartitems, setCartitems] = useState({});
-  const url = "http://localhost:8000";
+  const url = "https://food-delivery-app-production-2e9b.up.railway.app/";
   const [token, settoken] = useState(null);
 
 
 
   
   const fetchfoodlist = async () => {
-    const response = await axios.get("http://localhost:8000/api/v1/Food/list")
+    const response = await axios.get("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Food/list")
     setfood_list(response.data.data);
   }
 
@@ -44,7 +44,7 @@ const UserContextProvider = ({ children }) => {
       setCartitems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
     }
     if(token){
-      await axios.post("http://localhost:8000/api/v1/Cart/add",{_id:itemId},{headers:{ Authorization: `Bearer ${token}`}})
+      await axios.post("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Cart/add",{_id:itemId},{headers:{ Authorization: `Bearer ${token}`}})
     }
   }
 
@@ -52,7 +52,7 @@ const UserContextProvider = ({ children }) => {
   if (!token) return;
 
   const response = await axios.post(
-    "http://localhost:8000/api/v1/Cart/items",
+    "https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Cart/items",
     {},
     {
       headers: {
@@ -68,7 +68,7 @@ const UserContextProvider = ({ children }) => {
   const removefromcart = async(itemId) => {
     setCartitems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
     if(token){
-      await axios.post("http://localhost:8000/api/v1/Cart/remove",{_id:itemId},{headers:{ Authorization: `Bearer ${token}`}})
+      await axios.post("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Cart/remove",{_id:itemId},{headers:{ Authorization: `Bearer ${token}`}})
     }
 
   }
