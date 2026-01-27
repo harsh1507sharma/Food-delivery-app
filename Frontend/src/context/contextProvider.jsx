@@ -3,17 +3,12 @@ import { useState, useEffect } from "react";
 import UserContext from "./context";
 import axios from "axios";
 
-
-
 const UserContextProvider = ({ children }) => {
 
   const [food_list, setfood_list] = useState([]);
   const [Cartitems, setCartitems] = useState({});
   const url = "https://food-delivery-app-production-2e9b.up.railway.app";
   const [token, settoken] = useState(null);
-
-
-
   
   const fetchfoodlist = async () => {
     const response = await axios.get("https://food-delivery-app-production-2e9b.up.railway.app/api/v1/Food/list")
